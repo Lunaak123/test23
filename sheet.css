@@ -1,0 +1,115 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e3f2fd; /* Light Blue background */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff; /* White background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.operations-panel {
+    height: auto; /* Allow dynamic height */
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping to new lines */
+    align-items: center; /* Center items vertically */
+    margin-bottom: 20px; /* Space below the panel */
+}
+
+h1 {
+    text-align: center;
+    color: #1565c0; /* Dark blue color */
+    width: 100%; /* Ensure the title takes full width */
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column; /* Stack input and label vertically */
+    margin-right: 10px; /* Add space between input groups */
+    flex: 1; /* Allow equal width */
+}
+
+.small-input {
+    width: 100px; /* Smaller input box width */
+    padding: 5px; /* Padding for better look */
+}
+
+.small-select {
+    width: 100px; /* Smaller select box width */
+    margin-right: 10px; /* Space between select boxes */
+}
+
+button {
+    padding: 8px 12px;
+    font-size: 14px; /* Smaller button text */
+    background-color: #1565c0; /* Dark blue background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0d47a1; /* Darker blue on hover */
+}
+
+.sheet-content {
+    margin-top: 20px;
+    overflow-x: auto;
+    background-color: #ffffff; /* White background for content */
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ddd; /* Light border */
+}
+
+.download-section {
+    text-align: right; /* Align the button to the right */
+    margin-top: 20px; /* Space above the button */
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 300px; /* Width of the modal */
+}
+
+.modal-content h2 {
+    color: #1565c0; /* Dark blue color for heading */
+}
+
+.modal-content label {
+    display: block; /* Stack labels */
+    margin-bottom: 5px; /* Space below labels */
+}
+
+.modal-content input,
+.modal-content select {
+    width: 100%; /* Full width for inputs and selects */
+    padding: 5px;
+    margin-bottom: 10px; /* Space below inputs */
+}
+
+.modal-content button {
+    margin-right: 5px; /* Space between buttons */
+}
